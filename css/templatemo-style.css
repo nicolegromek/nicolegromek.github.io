@@ -528,8 +528,9 @@ header {
 
 #featured .item {
   text-align: left;
-  position: relative;
-  left: 20px
+  position: absolute;
+  top: 100px;
+  left: 30px;
   z-index: 10;
 }
 
@@ -538,7 +539,8 @@ header {
 }
 
 #featured .item .image img {
-  width: 100%;
+  width: 300px;
+  height: 150px;
   overflow: hidden;
 }
 
