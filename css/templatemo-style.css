@@ -539,7 +539,7 @@ header {
 #featured .item .image img {
   width: 125%;
   overflow: hidden;
-  padding-right: 30px;
+  margin-right: 15px;
 }
 
 #featured .item .image .featured-button a {
@@ -569,7 +569,6 @@ header {
 
 #featured .item .text-content {
   padding-top: 20px;
-  padding-right: 30px;
   background-color: #fff;
   position: relative;
   z-index: 10;
