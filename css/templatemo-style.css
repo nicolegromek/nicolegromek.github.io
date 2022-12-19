@@ -540,6 +540,7 @@ header {
   width: 125%;
   overflow: hidden;
   margin-right: 15px;
+  margin-left: 15px;
 }
 
 #featured .item .image .featured-button a {
