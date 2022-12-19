@@ -537,12 +537,12 @@ header {
 }
 
 #featured .item .image img {
-  width: auto;
+  width: 200%;
   overflow: hidden;
 }
 
 #featured .item .image .featured-button a {
-  font-size: 13px;
+  font-size: 15px;
   font-weight: 600;
   color: #fff;
   text-align: center;
@@ -551,7 +551,7 @@ header {
   display: inline-block;
   height: 44px;
   line-height: 44px;
-  width: auto;
+  width: 200%;
   letter-spacing: 0.25px;
   text-decoration: none;
   transition: all 0.5s;
