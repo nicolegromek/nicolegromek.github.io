@@ -50,6 +50,7 @@ jQuery(document).ready(function($) {
         $('.owl-carousel').owlCarousel({
             loop:true,
             margin:30,
+            autoWidth:50,
             responsiveClass:true,
             responsive:{
                 0:{
