@@ -539,6 +539,7 @@ header {
 #featured .item .image img {
   width: 125%;
   overflow: hidden;
+  padding-right: 30px;
 }
 
 #featured .item .image .featured-button a {
@@ -568,6 +569,7 @@ header {
 
 #featured .item .text-content {
   padding-top: 20px;
+  padding-right: 30px;
   background-color: #fff;
   position: relative;
   z-index: 10;
@@ -578,6 +580,7 @@ header {
   margin-bottom: 5px;
   font-size: 21px;
   font-weight: 600;
+  width: 125%;
   color: #232323;
   letter-spacing: 0.5px;
 }
@@ -587,6 +590,7 @@ header {
   font-size: 15px;
   font-weight: 600;
   color: #7a7a7a;
+  width: 125%;
   letter-spacing: 0.5px;
   margin-bottom: 12.5px;
 }
