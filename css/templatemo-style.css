@@ -529,6 +529,7 @@ header {
 #featured .item {
   text-align: left;
   position: relative;
+  left: 20px
   z-index: 10;
 }
 
@@ -537,7 +538,7 @@ header {
 }
 
 #featured .item .image img {
-  width: 125%;
+  width: 100%;
   overflow: hidden;
 }
 
@@ -551,7 +552,7 @@ header {
   display: inline-block;
   height: 44px;
   line-height: 44px;
-  width: 125%;
+  width: 100%;
   letter-spacing: 0.25px;
   text-decoration: none;
   transition: all 0.5s;
