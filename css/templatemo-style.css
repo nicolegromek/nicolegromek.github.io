@@ -534,10 +534,11 @@ header {
 
 #featured .item .image {
   position: relative;
+  width: 300px;
 }
 
 #featured .item .image img {
-  width: 200px;
+  width: 300px;
   overflow: hidden;
 }
 
