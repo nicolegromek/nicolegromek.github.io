@@ -496,6 +496,7 @@ header {
   outline: none;
 }
 
+/*
 #featured .owl-nav {
   position: absolute;
   display: inline-block;
@@ -528,6 +529,7 @@ header {
   background-color: #45489a;
   color: #fff;
 }
+*/
 
 #featured .item {
   text-align: left;
