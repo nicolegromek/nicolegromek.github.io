@@ -960,7 +960,7 @@ header {
 
 #CV .section-heading {
   margin-bottom: 30px;
-  text-align: left;
+  text-align: center;
 }
 
 #CV .section-heading h1 {
@@ -975,6 +975,7 @@ header {
 
 #CV .accent-button {
   margin-top: 30px;
+  text-align: center;
 }
 
 
