@@ -950,6 +950,32 @@ header {
   font-weight: 600;
 }
 
+/* CV Section */
+
+#CV {
+  text-align: left;
+  background-color: #f4f4f4;
+  padding: 50px 50px;
+}
+
+#CV .section-heading {
+  margin-bottom: 30px;
+  text-align: left;
+}
+
+#CV .section-heading h1 {
+  display: block;
+  margin: 0px;
+}
+
+#CV .section-heading p {
+  position: relative;
+  margin: 0px;
+}
+
+#CV .accent-button {
+  margin-top: 30px;
+}
 
 
 /* Responsive Style */
