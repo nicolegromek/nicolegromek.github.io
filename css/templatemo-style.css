@@ -682,12 +682,13 @@ header {
 ul.feature-icons {
 		list-style: none;
 		padding-left: 0;
+		padding-top: 10px; 
 }
 
 ul.feature-icons li {
 	text-decoration: none;
 	display: inline-block;
-	margin: 0 0 1.6875em 0;
+	margin: 1em 0 1em 0;
 	padding: 0.35em 0 0 3.5em;
 	position: relative;
 	vertical-align: top;
