@@ -696,7 +696,7 @@ ul.feature-icons li {
 }
 
 ul.feature-icons li::before {
-	background: #D17B88;
+	background: #45489a;
 	border-radius: 100%;
 	color: #ffffff;
 	display: block;
@@ -716,7 +716,75 @@ ul.feature-icons li::before {
 	content: '\f005';
 	font: var(--fa-font-solid);
 	
-	background: #D17B88;
+	background: #45489a;
+	border-radius: 100%;
+	color: #ffffff;
+	display: block;
+	height: 2.5em;
+	left: 0;
+	line-height: 2.5em;
+	position: absolute;
+	text-align: center;
+	top: 0;
+	width: 2.5em;
+}
+
+.chalkboard::before {
+	content: '\f51c';
+	font: var(--fa-font-solid);
+	
+	background: #45489a;
+	border-radius: 100%;
+	color: #ffffff;
+	display: block;
+	height: 2.5em;
+	left: 0;
+	line-height: 2.5em;
+	position: absolute;
+	text-align: center;
+	top: 0;
+	width: 2.5em;
+}
+
+.rocket::before {
+	content: '\f135';
+	font: var(--fa-font-solid);
+	
+	background: #45489a;
+	border-radius: 100%;
+	color: #ffffff;
+	display: block;
+	height: 2.5em;
+	left: 0;
+	line-height: 2.5em;
+	position: absolute;
+	text-align: center;
+	top: 0;
+	width: 2.5em;
+}
+
+.comments::before {
+	content: '\f086';
+	font: var(--fa-font-solid);
+	
+	background: #45489a;
+	border-radius: 100%;
+	color: #ffffff;
+	display: block;
+	height: 2.5em;
+	left: 0;
+	line-height: 2.5em;
+	position: absolute;
+	text-align: center;
+	top: 0;
+	width: 2.5em;
+}
+
+.hashtag::before {
+	content: '\23';
+	font: var(--fa-font-solid);
+	
+	background: #45489a;
 	border-radius: 100%;
 	color: #ffffff;
 	display: block;
