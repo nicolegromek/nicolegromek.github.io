@@ -617,6 +617,13 @@ header {
   margin: 0px;
 }
 
+
+#outreach .section-heading p {
+  position: relative;
+  margin: 0px;
+}
+
+
 #outreach .outreach-item {
     width: 100%;
     margin-bottom: 2px;
