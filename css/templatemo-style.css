@@ -623,6 +623,17 @@ header {
   margin-top: 10px;
 }
 
+.project-item {
+  width: 100%;
+  margin-bottom: 2px;
+  overflow: hidden;
+  position: relative;
+}
+.project-item img {
+  width: 100%;
+  display: block;
+}
+
 #outreach .project-item:hover .project-hover {
   top: 0;
   opacity: 1;
