@@ -620,9 +620,8 @@ header {
 
 #outreach .section-heading p {
   position: relative;
-  margin: 0px;
+  margin-top: 6px;
 }
-
 
 #outreach .outreach-item {
     width: 100%;
