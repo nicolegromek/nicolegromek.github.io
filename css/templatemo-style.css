@@ -660,6 +660,12 @@ header {
     padding: 30px;
 }
 
+.image-hover h5 {
+    font-size: 22px;
+    margin-bottom: 15px;
+    color: #1f9dc4;
+}
+
 /* Projects Style */
 
 #projects {
