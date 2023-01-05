@@ -694,7 +694,7 @@ ul.feature-icons li {
 	width: 48%;
 }
 
-ul.feature-icons li:before {
+ul.feature-icons li::before {
 	-moz-osx-font-smoothing: grayscale;
 	-webkit-font-smoothing: antialiased;
 	display: inline-block;
@@ -707,7 +707,7 @@ ul.feature-icons li:before {
 	font-weight: 400;
 }
 
-ul.feature-icons li:before {
+ul.feature-icons li::before {
 	background: #D17B88;
 	border-radius: 100%;
 	color: #ffffff;
@@ -720,6 +720,7 @@ ul.feature-icons li:before {
 	top: 0;
 	width: 2.5em;
 }
+
 
 /* Icons */
 
@@ -742,6 +743,10 @@ ul.icons li .icon:before {
 	font-size: 1.25em;
 }
 
+.star::before {
+	content: '\f005';
+	font: var(--fa-font-solid);
+}
 
 /* Projects Style */
 
