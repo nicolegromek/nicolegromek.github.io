@@ -635,31 +635,31 @@ header {
     padding-left: 1px;
 }
 
-.projects-holder {
+#outreach .projects-holder {
   margin-right: 0;
   margin-left: 0;
   margin-top: 40px;
 }
-.projects-holder .col-md-4, .projects-holder .col-md-4 {
+#outreach .projects-holder .col-md-4, .projects-holder .col-md-4 {
   padding-right: 1px;
   padding-left: 1px;
 }
-.project-item {
+#outreach .project-item {
   width: 100%;
   margin-bottom: 2px;
   overflow: hidden;
   position: relative;
 }
-.project-item img {
+#outreach .project-item img {
   width: 100%;
   display: block;
 }
-.project-item:hover .project-hover {
+#outreach .project-item:hover .project-hover {
   top: 0;
   opacity: 1;
   visibility: visible;
 }
-.project-hover {
+#outreach .project-hover {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -675,28 +675,22 @@ header {
   transition: all 200ms linear;
   font-size: 18px;
 }
-.project-hover .inside {
+#outreach .project-hover .inside {
   position: absolute;
   width: 100%;
   left: 0;
   bottom: 0;
   padding: 30px;
 }
-.project-hover h5 {
+#outreach .project-hover h5 {
   font-size: 22px;
   margin-bottom: 15px;
   color: #fff
 }
-.project-hover p {
+#outreach .project-hover p {
   color: #fff;
   font-size: 13px;
   line-height: 20px;
-
-.image-hover h5 {
-    font-size: 22px;
-    margin-bottom: 15px;
-    color: #1f9dc4;
-}
 
 /* Projects Style */
 
