@@ -599,6 +599,31 @@ header {
 }
 
 
+/* Outreach */
+
+#outreach {
+  text-align: left;
+  background-color: #f4f4f4;
+  padding: 50px 50px;
+}
+
+#outreach .section-heading {
+  margin-bottom: 30px;
+  text-align: left;
+}
+
+#outreach .section-heading h1 {
+  display: block;
+  margin: 0px;
+}
+
+#outreach .outreach-item {
+    width: 100%;
+    margin-bottom: 2px;
+    overflow: hidden;
+    position: relative;
+}
+
 
 /* Projects Style */
 
