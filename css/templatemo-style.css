@@ -353,9 +353,15 @@ header {
   font-weight: 700;
 }
 
+
+
 .Modern-Slider .info p {
   font-size: 15px;
   color: #fff;
+}
+
+.Modern-Slider .info p span {
+background-color: #11181A;
 }
 
 .Modern-Slider .info .white-button {
