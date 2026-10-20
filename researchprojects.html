@@ -1,171 +1,393 @@
 <!DOCTYPE html>
+
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>Research | Nicole Gromek</title>
-        <meta name="description" content="Research by Nicole Gromek on M-dwarf elemental abundances, near-infrared stellar spectroscopy, exoplanet composition, and binary-star calibration.">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="apple-touch-icon" href="apple-touch-icon.png">
-
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
-        <link rel="stylesheet" href="css/fontAwesome.css">
-        <link rel="stylesheet" href="css/light-box.css">
-        <link rel="stylesheet" href="css/owl-carousel.css">
-        <link rel="stylesheet" href="css/templatemo-style.css">
-
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css">
-
-
-        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
-    </head>
-
+<head>
+<meta charset="utf-8"/>
+<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"/>
+<title>Research | Nicole Gromek</title>
+<meta content="Research by Nicole Gromek on M-dwarf elemental abundances, near-infrared stellar spectroscopy, exoplanet composition, and binary-star calibration." name="description"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<link href="apple-touch-icon.png" rel="apple-touch-icon"/>
+<link href="css/bootstrap.min.css" rel="stylesheet"/>
+<link href="css/bootstrap-theme.min.css" rel="stylesheet"/>
+<link href="css/fontAwesome.css" rel="stylesheet"/>
+<link href="css/light-box.css" rel="stylesheet"/>
+<link href="css/owl-carousel.css" rel="stylesheet"/>
+<link href="css/templatemo-style.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css" rel="stylesheet"/>
+<script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+<style id="research-page-styles">
+/* Research-page styles only. Overrides Sentra/TemplateMo rules without modifying the homepage. */
+#featured.research-page {
+  text-align: left;
+  padding-top: 72px;
+  padding-bottom: 76px;
+}
+#featured.research-page,
+#featured.research-page * { box-sizing: border-box; }
+#featured.research-page .section-heading {
+  max-width: 850px;
+  margin: 0 0 38px;
+  text-align: left;
+}
+#featured.research-page .section-heading .research-eyebrow {
+  margin: 0 0 13px;
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #45489a;
+}
+#featured.research-page .section-heading p.research-eyebrow {
+  position: static;
+  display: block;
+  top: auto;
+  left: auto;
+  right: auto;
+  width: auto;
+}
+#featured.research-page .section-heading h1 {
+  display: block;
+  width: auto;
+  margin: 0 0 18px;
+  font-size: clamp(30px, 3.1vw, 43px);
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.8px;
+  color: #25263a;
+}
+#featured.research-page .section-heading h1 em {color: #45489a;}
+#featured.research-page .section-heading p.research-description {
+  display: block;
+  position: static;
+  top: auto;
+  left: auto;
+  right: auto;
+  max-width: 760px;
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.8;
+  color: #505468;
+}
+#featured.research-page .section-content,
+#featured.research-page .tabs-content,
+#featured.research-page .wrapper { width: 100%; min-width: 0; }
+/* The original theme styles #blog .tabs, but this page uses #featured. */
+#featured.research-page .tabs {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0 0 0 2px;
+  list-style: none;
+  border-bottom: 2px solid #e5e5f0;
+  background: transparent;
+}
+#featured.research-page .tabs li {
+  float: none;
+  display: block;
+  margin: 0 28px -2px 0;
+  padding: 0;
+  list-style: none;
+}
+#featured.research-page .tabs a {
+  display: block;
+  padding: 15px 3px 16px;
+  color: #666a7c;
+  border-bottom: 3px solid transparent;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: .15px;
+  line-height: 1.35;
+  text-decoration: none;
+  transition: color .2s ease, border-color .2s ease;
+}
+#featured.research-page .tabs a.active,
+#featured.research-page .tabs a:hover,
+#featured.research-page .tabs a:focus-visible {
+  color: #45489a;
+  border-bottom-color: #45489a;
+  background: transparent;
+}
+#featured.research-page a:focus-visible { outline: 3px solid #898ddd; outline-offset: 4px; }
+#featured.research-page .tabgroup {
+  padding: 0;
+  background: transparent;
+  text-align: left;
+}
+#featured.research-page .tabgroup > div { padding-top: 28px; }
+/* Prevent a flash of the second panel before the theme's tab script starts. */
+#featured.research-page .tabgroup > div:not(:first-child) { display: none; }
+#featured.research-page .research-article {
+  width: 100%;
+  padding: clamp(22px, 3.3vw, 42px);
+  background: #fff;
+  border: 1px solid #e6e7ee;
+  border-radius: 12px;
+  box-shadow: 0 9px 27px rgba(31, 34, 85, .055);
+}
+#featured.research-page .research-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(210px, 35%);
+  align-items: start;
+  gap: clamp(20px, 3vw, 36px);
+  margin-bottom: 26px;
+}
+#featured.research-page .research-status {
+  display: inline-block;
+  margin-bottom: 12px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  line-height: 1.5;
+  text-transform: uppercase;
+  color: #686a9e;
+}
+#featured.research-page .research-article h2 {
+  width: auto;
+  max-width: 100%;
+  margin: 0 0 16px;
+  font-size: clamp(23px, 2.4vw, 30px);
+  font-weight: 700;
+  letter-spacing: -.4px;
+  line-height: 1.3;
+  color: #242638;
+}
+#featured.research-page .research-article h3 {
+  width: auto;
+  margin: 0 0 13px;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 1.4;
+  color: #25263a;
+}
+#featured.research-page .research-article p {
+  width: auto;
+  margin: 0 0 16px;
+  position: static;
+  font-size: 15px;
+  line-height: 1.88;
+  color: #505466;
+  text-align: left;
+}
+#featured.research-page .research-article p.research-lead {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #41475b;
+}
+#featured.research-page .research-figure {
+  width: 100%;
+  min-width: 0;
+  margin: 3px 0 0;
+  padding: 10px;
+  border: 1px solid #e9e9f1;
+  border-radius: 8px;
+  background: #f7f7fa;
+}
+#featured.research-page .research-figure img {
+  display: block;
+  float: none;
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  max-height: 310px;
+  object-fit: contain;
+  margin: 0 auto;
+  border-radius: 5px;
+}
+#featured.research-page .research-body { max-width: 780px; }
+#featured.research-page .research-subsection {
+  border-top: 1px solid #e9e9f0;
+  padding-top: 26px;
+  margin-top: 26px;
+}
+#featured.research-page .research-subsection:first-child {
+  margin-top: 0;
+}
+#featured.research-page .research-paper {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  margin: 22px 0 7px;
+  padding: 19px 23px;
+  border-left: 3px solid #45489a;
+  border-radius: 0 7px 7px 0;
+  background: #f5f5fb;
+}
+#featured.research-page .research-paper .paper-label {
+  font-size: 11px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: #686b8b;
+}
+#featured.research-page .research-paper a {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #383d92;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+#featured.research-page .research-article a:not(.tabs a):hover { color: #24285f; }
+#featured.research-page .research-inline-link {
+  color: #383d92;
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+#featured.research-page .research-article .research-endnote {
+  margin-bottom: 0;
+  margin-top: 10px;
+  font-size: 14px;
+}
+@media (max-width: 1100px) {
+  #featured.research-page { padding-left: 32px; padding-right: 32px; }
+  #featured.research-page .research-hero { grid-template-columns: minmax(0, 1fr) minmax(185px, 33%); }
+}
+@media (max-width: 800px) {
+  #featured.research-page { padding-top: 66px; padding-left: 25px; padding-right: 25px; }
+  #featured.research-page .research-hero { grid-template-columns: minmax(0, 1fr); }
+  #featured.research-page .research-figure { max-width: 480px; margin: 0 0 4px; }
+  #featured.research-page .research-figure img { max-height: 280px; }
+}
+@media (max-width: 767px) {
+  #featured.research-page { padding-top: 95px; }
+  #featured.research-page .section-heading { margin-bottom: 28px; }
+}
+@media (max-width: 480px) {
+  #featured.research-page { padding-left: 16px; padding-right: 16px; }
+  #featured.research-page .section-heading p.research-eyebrow {
+  position: static;
+  display: block;
+  top: auto;
+  left: auto;
+  right: auto;
+  width: auto;
+}
+#featured.research-page .section-heading h1 { font-size: 29px; }
+  #featured.research-page .section-heading p.research-description { font-size: 15px; line-height: 1.7; }
+  #featured.research-page .tabs li { margin-right: 20px; }
+  #featured.research-page .tabs a { font-size: 13px; padding: 13px 0 14px; }
+  #featured.research-page .research-article { padding: 21px 17px; }
+  #featured.research-page .research-article h2 { font-size: 23px; }
+  #featured.research-page .research-article h3 { font-size: 19px; }
+  #featured.research-page .research-article p { font-size: 14px; line-height: 1.8; }
+  #featured.research-page .research-article p.research-lead { font-size: 15px; }
+  #featured.research-page .research-paper { padding: 16px; }
+}
+</style></head>
 <body>
-
-
-        <header class="nav-down responsive-nav hidden-lg hidden-md">
-            <button type="button" id="nav-toggle" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <!--/.navbar-header-->
-            <div id="main-nav" class="collapse navbar-collapse">
-                <nav>
-                    <ul class="nav navbar-nav">
-                        <li><a href="https://nicolegromek.github.io/#top">Welcome</a></li>
-			<li><a href="https://nicolegromek.github.io/#video">About Me</a></li>
-                        <li><a href="#featured">Research</a></li>
-			<li><a href="https://nicolegromek.github.io/#outreach">Outreach</a></li>
-                        <li><a href="https://nicolegromek.github.io/#projects">Photography</a></li>
-                        <li><a href="https://nicolegromek.github.io/#CV">CV</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
-
-        <div class="sidebar-navigation hidden-sm hidden-xs">
-            <div class="logo">
-		    <a href="https://nicolegromek.github.io/"><em>Nicole</em> Gromek</a>
-            </div>
-            <nav>
-                <ul>
-                    <li>
-                        <a href="https://nicolegromek.github.io/#top">
-                            <span class="rect"></span>
-			    <span class="circle"></span>
+<header class="nav-down responsive-nav hidden-lg hidden-md">
+<button class="navbar-toggle" data-target="#main-nav" data-toggle="collapse" id="nav-toggle" type="button">
+<span class="sr-only">Toggle navigation</span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+<!--/.navbar-header-->
+<div class="collapse navbar-collapse" id="main-nav">
+<nav>
+<ul class="nav navbar-nav">
+<li><a href="https://nicolegromek.github.io/#top">Welcome</a></li>
+<li><a href="https://nicolegromek.github.io/#video">About Me</a></li>
+<li><a href="#featured">Research</a></li>
+<li><a href="https://nicolegromek.github.io/#outreach">Outreach</a></li>
+<li><a href="https://nicolegromek.github.io/#projects">Photography</a></li>
+<li><a href="https://nicolegromek.github.io/#CV">CV</a></li>
+</ul>
+</nav>
+</div>
+</header>
+<div class="sidebar-navigation hidden-sm hidden-xs">
+<div class="logo">
+<a href="https://nicolegromek.github.io/"><em>Nicole</em> Gromek</a>
+</div>
+<nav>
+<ul>
+<li>
+<a href="https://nicolegromek.github.io/#top">
+<span class="rect"></span>
+<span class="circle"></span>
                             Welcome
                         </a>
-                    </li>
-                    <li>
-                        <a href="https://nicolegromek.github.io/#video">
-                            <span class="rect"></span>
-                            <span class="circle"></span>
+</li>
+<li>
+<a href="https://nicolegromek.github.io/#video">
+<span class="rect"></span>
+<span class="circle"></span>
                             About Me
                         </a>
-                    </li>
-                    <li>
-                        <a href="#featured">
-                            <span class="rect"></span>
-                            <span class="circle"></span>
+</li>
+<li>
+<a href="#featured">
+<span class="rect"></span>
+<span class="circle"></span>
                             Research
                         </a>
-                    </li>
-                    <li>
-                        <a href="https://nicolegromek.github.io/#outreach">
-                            <span class="rect"></span>
-                            <span class="circle"></span>
+</li>
+<li>
+<a href="https://nicolegromek.github.io/#outreach">
+<span class="rect"></span>
+<span class="circle"></span>
                             Outreach
                         </a>
-                    </li>
-                    <li>
-                        <a href="https://nicolegromek.github.io/#projects">
-                            <span class="rect"></span>
-                            <span class="circle"></span>
+</li>
+<li>
+<a href="https://nicolegromek.github.io/#projects">
+<span class="rect"></span>
+<span class="circle"></span>
                             Photography
                         </a>
-                    </li>
-                    <li>
-                        <a href="https://nicolegromek.github.io/#CV">
-                            <span class="rect"></span>
-                            <span class="circle"></span>
+</li>
+<li>
+<a href="https://nicolegromek.github.io/#CV">
+<span class="rect"></span>
+<span class="circle"></span>
                             CV
                         </a>
-                    </li>
-                </ul>
-            </nav>
-            <ul class="social-icons">
-                <li><a href="https://www.facebook.com/people/Nicole-Gromek/100010791766062/"><i class="fa-brands fa-facebook-f"></i></a></li>
-		<li><a href="https://www.instagram.com/nicole.gromek/"><i class="fa-brands fa-instagram"></i></a></li>
-                <li><a href="https://www.linkedin.com/in/nicole-gromek/"><i class="fa-brands fa-linkedin"></i></a></li>
-		<li><a href="mailto:gromekn@mcmaster.ca"><i class="fa fa-envelope"></i></a></li>
-            </ul>
-        </div>
-
-        <div class="page-content">
-
-            <section id="featured" class="content-section">
-                <div class="section-heading">
-                    <h1>Exploring the Chemistry<br><em>of Stars and Planets</em></h1>
-                    <p>My research focuses on measuring the chemical compositions of cool, low-mass stars (M dwarfs) and exploring what their chemistry can tell us about the planets that form around them. Using high-resolution near-infrared spectroscopy, I develop methods to measure elements important to planetary interiors and atmospheres, then test how reliably those measurements can be recovered.</p>
-                </div>
-                <div class="section-content">
-                    <div class="tabs-content">
-                        <div class="wrapper">
-                            <ul class="tabs clearfix" data-tabgroup="first-tab-group">
-                                <li><a href="#tab1" class="active">M-Dwarf Abundances</a></li>
-                                <li><a href="#tab2">Cygnus Loop</a></li>
-                            </ul>
-                            <section id="first-tab-group" class="tabgroup">
-                                <div id="tab1">
-                                    <ul><li><div class="item">
-                                        <img src="img/MDwarfs.jpg" alt="Illustration of M dwarfs" loading="lazy">
-                                        <div class="text-content">
-                                            <h4>Connecting Stellar Chemistry to Planet Formation</h4>
-                                            <p>What can the chemical composition of a star tell us about the planets orbiting it? M dwarfs are among the most common stars in our Galaxy and host many known small exoplanets. Measuring their elemental abundances can help us investigate the materials available when planets form, from the iron and silicates of rocky interiors to carbon- and oxygen-bearing compounds.</p>
-                                            <p>I am developing a framework for determining individual elemental abundances from high-resolution near-infrared spectra of M dwarfs. Using observations from the SPIRou spectrograph and synthetic spectra generated with MARCS stellar atmospheres and Turbospectrum, I identify and fit atomic and molecular absorption features. This work includes careful line selection, spectral normalization, and assessment of uncertainties, all especially challenging in the crowded spectra of cool stars.</p>
-                                            <p>In our recent study, we applied this framework to SPIRou spectra of five nearby planet-host stars: GJ 9827, K2-18, TOI-1201, TOI-1685, and Barnard’s Star. We measured abundances of key planet-forming elements, including carbon, oxygen, magnesium, silicon, and iron, and examined ratios such as C/O, Mg/Si, and Fe/Mg. These measurements provide chemical reference points for interpreting the interiors and atmospheres of their planets, while recognizing that planetary compositions also depend on formation and evolution.</p>
-                                            <p><strong>Read our paper:</strong> <a href="https://arxiv.org/abs/2609.24970" target="_blank" rel="noopener noreferrer"><em>Elemental Abundances of Cool Stars: A Spectroscopic Framework Applied to Five Planet-Host Stars</em> (Gromek et al., 2026)</a>.</p>
-                                            <h4>Calibrating M-Dwarf Abundances with Binary Stars</h4>
-                                            <p>A key next step is to test and improve the accuracy of our measurements using wide binary systems containing an FGK star and an M dwarf. Because both stars are expected to have formed from the same material, they should share similar initial chemical compositions. Abundances measured from the better-understood FGK star can therefore provide an independent reference for its cool companion.</p>
-                                            <p>Our program has obtained high-resolution SPIRou spectra of 24 FGK–M binary systems. By comparing abundances within each pair, we aim to identify systematic offsets and calibrate M-dwarf measurements across a range of stellar temperatures and metallicities. Ultimately, this will help make the chemical characterization of M-dwarf exoplanet hosts more reliable.</p>
-                                        </div>
-                                    </div></li></ul>
-                                </div>
-                                <div id="tab2">
-                                    <ul><li><div class="item">
-                                        <img src="img/ColourCompJennifer.png" alt="Composite view of the Cygnus Loop supernova remnant" loading="lazy">
-                                        <div class="text-content">
-                                            <h4>Cygnus Loop: Radio Structure and Magnetic Fields</h4>
-                                            <p>During my undergraduate research in 2021–2022, including the University of Toronto’s Summer Undergraduate Research Program (SURP), I studied the Cygnus Loop, a well-known supernova remnant with an unusual shape: a roughly circular northern structure and an extended southern region. One possible explanation is that the original explosion expanded into a lower-density region; another is that the structure involves two overlapping supernova remnants.</p>
-                                            <p>I investigated the remnant using radio observations, where relativistic electrons emit synchrotron radiation in magnetic fields. I produced maps of its spectral index and Faraday rotation measure to look for differences in the emitting particles and magnetic-field properties across the structure. These measurements provide clues to the remnant's morphology and evolution.</p>
-                                            <p>Learn more about the <a href="https://surpatuoftastro.github.io/" target="_blank" rel="noopener noreferrer">University of Toronto Astronomy SURP 2021 program and projects</a>.</p>
-                                        </div>
-                                    </div></li></ul>
-                                </div>
-                            </section>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="footer">
-                <p>Copyright &copy; 2026 Nicole Gromek. Design: TemplateMo</p>
-            </section>
-        </div>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
-
-    <script src="js/vendor/bootstrap.min.js"></script>
-    
-    <script src="js/plugins.js"></script>
-    <script src="js/main.js"></script>
-
-    <script>
+</li>
+</ul>
+</nav>
+<ul class="social-icons">
+<li><a href="https://www.facebook.com/people/Nicole-Gromek/100010791766062/"><i class="fa-brands fa-facebook-f"></i></a></li>
+<li><a href="https://www.instagram.com/nicole.gromek/"><i class="fa-brands fa-instagram"></i></a></li>
+<li><a href="https://www.linkedin.com/in/nicole-gromek/"><i class="fa-brands fa-linkedin"></i></a></li>
+<li><a href="mailto:gromekn@mcmaster.ca"><i class="fa fa-envelope"></i></a></li>
+</ul>
+</div>
+<div class="page-content">
+<section class="content-section research-page" id="featured">
+<div class="section-heading"><p class="research-eyebrow">RESEARCH · NICOLE GROMEK</p><h1>Exploring the Chemistry<br/><em>of Stars and Planets</em></h1><p class="research-description">My research focuses on measuring the chemical compositions of cool, low-mass stars (M dwarfs) and exploring what their chemistry can tell us about the planets that form around them. Using high-resolution near-infrared spectroscopy, I develop methods to measure elements important to planetary interiors and atmospheres, then test how reliably those measurements can be recovered.</p></div>
+<div class="section-content">
+<div class="tabs-content">
+<div class="wrapper">
+<ul aria-label="Research topics" class="tabs clearfix" data-tabgroup="first-tab-group">
+<li><a aria-controls="tab1" class="active" href="#tab1">M-Dwarf Abundances</a></li>
+<li><a aria-controls="tab2" href="#tab2">Cygnus Loop</a></li>
+</ul>
+<section class="tabgroup" id="first-tab-group">
+<div id="tab1"><article class="research-article"><div class="research-hero"><div class="research-hero-copy"><span class="research-status">Current research · PhD</span><h2>M-Dwarf Abundances &amp; Exoplanet Composition</h2><p class="research-lead">What can the chemical composition of a star tell us about the planets orbiting it? M dwarfs are among the most common stars in our Galaxy and host many known small exoplanets. Measuring their elemental abundances can help us investigate the materials available when planets form, from the iron and silicates of rocky interiors to carbon- and oxygen-bearing compounds.</p></div><figure class="research-figure"><img alt="Illustration of M dwarfs" loading="lazy" src="img/MDwarfs.jpg"/></figure></div><div class="research-body"><section class="research-subsection"><h3>Measuring the Chemistry of Cool Stars</h3><p>I am developing a framework for determining individual elemental abundances from high-resolution near-infrared spectra of M dwarfs. Using observations from the SPIRou spectrograph and synthetic spectra generated with MARCS stellar atmospheres and Turbospectrum, I identify and fit atomic and molecular absorption features. This work includes careful line selection, spectral normalization, and assessment of uncertainties, all especially challenging in the crowded spectra of cool stars.</p><p>In our recent study, we applied this framework to SPIRou spectra of five nearby planet-host stars: GJ 9827, K2-18, TOI-1201, TOI-1685, and Barnard’s Star. We measured abundances of key planet-forming elements, including carbon, oxygen, magnesium, silicon, and iron, and examined ratios such as C/O, Mg/Si, and Fe/Mg. These measurements provide chemical reference points for interpreting the interiors and atmospheres of their planets, while recognizing that planetary compositions also depend on formation and evolution.</p><aside class="research-paper"><span class="paper-label">Recent preprint · Gromek et al. (2026)</span><a href="https://arxiv.org/abs/2609.24970" rel="noopener noreferrer" target="_blank">Elemental Abundances of Cool Stars: A Spectroscopic Framework Applied to Five Planet-Host Stars ↗</a></aside></section><section class="research-subsection"><h3>Calibrating M-Dwarf Abundances with Binary Stars</h3><p>A key next step is to test and improve the accuracy of our measurements using wide binary systems containing an FGK star and an M dwarf. Because both stars are expected to have formed from the same material, they should share similar initial chemical compositions. Abundances measured from the better-understood FGK star can therefore provide an independent reference for its cool companion.</p><p>Our program has obtained high-resolution SPIRou spectra of 24 FGK–M binary systems. By comparing abundances within each pair, we aim to identify systematic offsets and calibrate M-dwarf measurements across a range of stellar temperatures and metallicities. Ultimately, this will help make the chemical characterization of M-dwarf exoplanet hosts more reliable.</p></section></div></article></div>
+<div id="tab2"><article class="research-article"><div class="research-hero"><div class="research-hero-copy"><span class="research-status">Previous research · 2021–2022</span><h2>The Cygnus Loop Supernova Remnant</h2><p class="research-lead">During my undergraduate research in 2021–2022, including the University of Toronto’s Summer Undergraduate Research Program (SURP), I studied the Cygnus Loop, a well-known supernova remnant with an unusual shape: a roughly circular northern structure and an extended southern region. One possible explanation is that the original explosion expanded into a lower-density region; another is that the structure involves two overlapping supernova remnants.</p></div><figure class="research-figure"><img alt="Composite view of the Cygnus Loop supernova remnant" loading="lazy" src="img/ColourCompJennifer.png"/></figure></div><div class="research-body"><p>I investigated the remnant using radio observations, where relativistic electrons emit synchrotron radiation in magnetic fields. I produced maps of its spectral index and Faraday rotation measure to look for differences in the emitting particles and magnetic-field properties across the structure. These measurements provide clues to the remnant’s morphology and evolution.</p><p class="research-endnote">Read more about my project in the <a class="research-inline-link" href="https://surpatuoftastro.github.io/" rel="noopener noreferrer" target="_blank">University of Toronto Astronomy SURP 2021 project archive ↗</a>.</p></div></article></div>
+</section>
+</div>
+</div>
+</div>
+</section>
+<section class="footer">
+<p>Copyright © 2026 Nicole Gromek. Design: TemplateMo</p>
+</section>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+<script src="js/vendor/bootstrap.min.js"></script>
+<script src="js/plugins.js"></script>
+<script src="js/main.js"></script>
+<script>
         // Hide Header on on scroll down
         var didScroll;
         var lastScrollTop = 0;
@@ -205,8 +427,5 @@
             lastScrollTop = st;
         }
     </script>
-
-
-
 </body>
 </html>
